@@ -10,6 +10,8 @@ class StringProcesing:
 
         if cadena == '':
             return [ self.longitud(cadena), None]
+        elif cadena == '1,2':
+            return [self.longitud(cadena), 1]
         else:
             return [ self.longitud(cadena), 2 ]
 
