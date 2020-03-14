@@ -21,3 +21,6 @@ class TestSecuencia(unittest.TestCase):
         self.assertEquals(StringProcesing().analizador_secuencia('')[0], 0, 'Cadena vacia')
         self.assertEquals(StringProcesing().analizador_secuencia('')[1], None, 'Cadena vacia')
 
+    def test_minimo_1(self):
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[0], 1, 'Cadena vacia')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[1], 2, 'Cadena vacia')
