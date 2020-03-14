@@ -7,12 +7,14 @@ class StringProcesing:
             return len(cadena.split(","))
 
     def analizador_secuencia(self, cadena):
-
-        if cadena == '':
-            return [ self.longitud(cadena), None]
-        elif cadena == '1,2':
-            return [self.longitud(cadena), 1]
-        else:
-            return [ self.longitud(cadena), 2 ]
+        if(cadena==''):
+            return [len(cadena), None]
+        cadena = cadena.split(",")
+        min = 100000
+        print(cadena)
+        for i in cadena:
+            if(int(i)<int(min)):
+                min = int(i)
+        return [len(cadena), int(min)]
 
 
