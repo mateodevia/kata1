@@ -59,5 +59,11 @@ class TestSecuencia(unittest.TestCase):
         self.assertEquals(StringProcesing().analizador_secuencia('')[2], None, 'Cadena vacia')
         self.assertEquals(StringProcesing().analizador_secuencia('')[3], None, 'Cadena vacia ')
 
+    def test_promedio_1(self):
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[0], 0, 'Cadena longitud 1')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[1], None, 'Cadena mínimo 2')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[2], None, 'Cadena máxima 2')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[3], None, 'Cadena promedio 2')
+
 
 
