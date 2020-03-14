@@ -12,7 +12,7 @@ class StringProcesing:
         elif (cadena=='2'):
             return [len(cadena), 2, 2]
         elif (cadena=='1,2'):
-            return [len(cadena), 1, 2]
+            return [self.longitud(cadena), 1, 2]
 
         cadena = cadena.split(",")
         min = 100000
