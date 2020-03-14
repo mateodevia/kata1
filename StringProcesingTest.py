@@ -22,9 +22,13 @@ class TestSecuencia(unittest.TestCase):
         self.assertEquals(StringProcesing().analizador_secuencia('')[1], None, 'Cadena vacia')
 
     def test_minimo_1(self):
-        self.assertEquals(StringProcesing().analizador_secuencia('2')[0], 1, 'Cadena vacia')
-        self.assertEquals(StringProcesing().analizador_secuencia('2')[1], 2, 'Cadena vacia')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[0], 1, 'String con longitud 1')
+        self.assertEquals(StringProcesing().analizador_secuencia('2')[1], 2, 'String con minimo 2')
 
     def test_minimo_2(self):
-        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[0], 2, 'Cadena vacia')
-        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[1], 1, 'Cadena vacia')
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[0], 2, 'String con longitud 2')
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[1], 1, 'String con minimo 1')
+
+    def test_minimo_n(self):
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2,3,4')[0], 4, 'String con longitud 4')
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2,3,4')[1], 1, 'String con minimo 1')
