@@ -7,6 +7,10 @@ class StringProcesing:
             return len(cadena.split(","))
 
     def analizador_secuencia(self, cadena):
-        return [ self.longitud(cadena), None]
+
+        if cadena == '':
+            return [ self.longitud(cadena), None]
+        else:
+            return [ self.longitud(cadena), 2 ]
 
 
