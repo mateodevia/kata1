@@ -8,7 +8,7 @@ class StringProcesing:
 
     def analizador_secuencia(self, cadena):
         if(cadena==''):
-            return [len(cadena), None, None]
+            return [len(cadena), None, None, None]
         cadena = cadena.split(",")
         min = 100000
         max = 0
