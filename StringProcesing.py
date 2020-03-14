@@ -19,12 +19,15 @@ class StringProcesing:
 
         print(cadena)
 
+        suma = 0
         for i in cadena:
             if(int(i)<min):
                 min = int(i)
             if(int(i)>max):
                 max = int(i)
+            suma = suma + int(i)
 
-        return [len(cadena), int(min), int(max)]
+
+        return [len(cadena), int(min), int(max), suma/len(cadena)]
 
 
