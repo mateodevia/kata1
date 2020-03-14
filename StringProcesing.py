@@ -7,3 +7,6 @@ class StringProcesing:
             return 1
         if cadena == '1,2':
             return 2
+        else:
+            return len(cadena.split(","))
+
