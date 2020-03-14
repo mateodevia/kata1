@@ -6,7 +6,7 @@ class StringProcesing:
         else:
             return len(cadena.split(","))
 
-    def longitud_minimo(self, cadena):
-        pass
+    def analizador_secuencia(self, cadena):
+        return [ self.longitud(cadena), None]
 
 
