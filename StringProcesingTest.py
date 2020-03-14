@@ -12,3 +12,7 @@ class TestSecuencia(unittest.TestCase):
 
     def test_longitud_2(self):
         self.assertEquals(StringProcesing().longitud('1,2'), 2, 'String con longitud 2')
+
+    def test_longitud_n(self):
+        self.assertEquals(StringProcesing().longitud('1,2,3'), 3, 'String con longitud 3')
+        self.assertEquals(StringProcesing().longitud('1,2,3,4,5'), 5, 'String con longitud 5')
