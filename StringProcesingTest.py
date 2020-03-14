@@ -38,9 +38,14 @@ class TestSecuencia(unittest.TestCase):
         self.assertEquals(StringProcesing().analizador_secuencia('')[1], None, 'Cadena vacia')
         self.assertEquals(StringProcesing().analizador_secuencia('')[2], None, 'Cadena vacia')
 
-    def test_maximo_vacio(self):
+    def test_maximo_1(self):
         self.assertEquals(StringProcesing().analizador_secuencia('2')[0], 1, 'Cadena longitud 1')
         self.assertEquals(StringProcesing().analizador_secuencia('2')[1], 2, 'Cadena mínimo 2')
         self.assertEquals(StringProcesing().analizador_secuencia('2')[2], 2, 'Cadena maximo 2')
+
+    def test_maximo_2(self):
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[0], 2, 'Cadena longitud 2')
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[1], 1, 'Cadena mínimo 1')
+        self.assertEquals(StringProcesing().analizador_secuencia('1,2')[2], 2, 'Cadena maximo 2')
 
 
