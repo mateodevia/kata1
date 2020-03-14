@@ -32,3 +32,8 @@ class TestSecuencia(unittest.TestCase):
     def test_minimo_n(self):
         self.assertEquals(StringProcesing().analizador_secuencia('1,2,3,4')[0], 4, 'String con longitud 4')
         self.assertEquals(StringProcesing().analizador_secuencia('1,2,3,4')[1], 1, 'String con minimo 1')
+
+    def test_maximo_vacio(self):
+        self.assertEquals(StringProcesing().analizador_secuencia('')[0], 0, 'Cadena vacia')
+        self.assertEquals(StringProcesing().analizador_secuencia('')[1], None, 'Cadena vacia')
+        self.assertEquals(StringProcesing().analizador_secuencia('')[2], None, 'Cadena vacia')
