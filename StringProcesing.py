@@ -16,9 +16,9 @@ class StringProcesing:
         print(cadena)
 
         for i in cadena:
-            if(int(i)<int(min)):
+            if(int(i)<min):
                 min = int(i)
-            if(int(i)>int(max)):
+            if(int(i)>max):
                 max = int(i)
 
         return [len(cadena), int(min), int(max)]
