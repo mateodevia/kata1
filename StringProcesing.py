@@ -1,4 +1,4 @@
 class StringProcesing:
 
-    def longitud(cadena):
-        pass
+    def longitud(self, cadena):
+        return 0
